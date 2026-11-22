@@ -27,7 +27,7 @@
                     CBT
                 </div>
                 <div>
-                    <h1 id="nav-school-name" class="font-bold text-base md:text-lg leading-tight tracking-wide">UPTD SMP NEGERI 13 SINJAI</h1>
+                    <h1 id="nav-school-name" class="font-bold text-base md:text-lg leading-tight tracking-wide">SDN 90 MATTUMPU</h1>
                     <p id="nav-exam-subtitle" class="text-xs text-blue-200">Sumatif Akhir Semester (SAS) &bull; Matematika</p>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                     Sumatif Akhir Semester (SAS)
                 </span>
                 <h2 class="text-2xl font-extrabold">Login Peserta Ujian</h2>
-                <p id="login-school-sub" class="text-blue-100 text-xs mt-1 font-semibold">UPTD SMP NEGERI 13 SINJAI</p>
+                <p id="login-school-sub" class="text-blue-100 text-xs mt-1 font-semibold">SDN 90 MATTUMPU</p>
                 <p id="login-subject-duration" class="text-blue-200 text-[11px] mt-0.5">Mata Pelajaran: Matematika &bull; Durasi: 90 Menit</p>
             </div>
 
@@ -396,7 +396,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-bold text-slate-600 mb-1">Profil / Nama Sekolah</label>
-                        <input type="text" id="admin-school-name" placeholder="Contoh: UPTD SMP NEGERI 13 SINJAI"
+                        <input type="text" id="admin-school-name" placeholder="Contoh: SDN 90 MATTUMPU"
                             class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-semibold focus:bg-white focus:border-blue-600 outline-none">
                     </div>
                     <div>
@@ -598,7 +598,7 @@
         const ADMIN_PASSWORD = "hajra03";
 
         let appConfig = {
-            schoolName: "UPTD SMP NEGERI 13 SINJAI",
+            schoolName: "SDN 90 MATTUMPU",
             examType: "Sumatif Akhir Semester (SAS)",
             subjectName: "Matematika",
             token: "Matematika9",
@@ -1374,7 +1374,7 @@
         }
 
         async function saveAdminSettings() {
-            appConfig.schoolName = document.getElementById("admin-school-name").value.trim() || "UPTD SMP NEGERI 13 SINJAI";
+            appConfig.schoolName = document.getElementById("admin-school-name").value.trim() || "SDN 90 MATTUMPU";
             appConfig.examType = document.getElementById("admin-exam-type").value.trim() || "Sumatif Akhir Semester (SAS)";
             appConfig.subjectName = document.getElementById("admin-subject-name").value.trim() || "Matematika";
             appConfig.duration = Number(document.getElementById("admin-duration").value) || 90;
